@@ -123,11 +123,25 @@
                                     <action selector="btnDigitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHu-F0-Cws"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S6-yx-qcN">
+                                <rect key="frame" x="506" y="158" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="zal-sB-Kc0"/>
+                                </constraints>
+                                <state key="normal" title="Test butto">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextViewControllerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1OB-cj-ySX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QK5-nx-8jj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FbL-qF-lCJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0S6-yx-qcN" secondAttribute="trailing" constant="9" id="SZU-Xj-lf5"/>
                             <constraint firstItem="QK5-nx-8jj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Skv-nG-TK1"/>
+                            <constraint firstItem="0S6-yx-qcN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="138" id="VT5-7x-oIA"/>
                             <constraint firstItem="QK5-nx-8jj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Vfz-db-sgO"/>
                         </constraints>
                     </view>

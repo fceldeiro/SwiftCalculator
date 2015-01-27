@@ -15,6 +15,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelDisplay:UILabel!;
 
+    @IBAction func btnNextViewControllerPressed(sender:AnyObject){
+        
+        var secondViewController = SecondViewController();
+        
+        self.presentViewController(secondViewController, animated: true) { () -> Void in
+            println("second view controller presented")
+        }
+    }
     @IBAction func btnDigitPressed(sender:UIButton)-> Void{
         let digit:NSString = sender.currentTitle!
         if (userIsInTheMiddleOfTypingNumber){
@@ -33,6 +41,7 @@ class ViewController: UIViewController {
         
         print(labelDisplay.text);
     }
+    
   
 }
 

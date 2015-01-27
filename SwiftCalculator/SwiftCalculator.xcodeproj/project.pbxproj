@@ -13,6 +13,7 @@
 		CD63EB501A772C9700A1D95F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD63EB4F1A772C9700A1D95F /* Images.xcassets */; };
 		CD63EB531A772C9700A1D95F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD63EB511A772C9700A1D95F /* LaunchScreen.xib */; };
 		CD63EB5F1A772C9700A1D95F /* SwiftCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD63EB5E1A772C9700A1D95F /* SwiftCalculatorTests.swift */; };
+		CD63EB691A774E8300A1D95F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD63EB681A774E8300A1D95F /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CD63EB581A772C9700A1D95F /* SwiftCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD63EB5D1A772C9700A1D95F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD63EB5E1A772C9700A1D95F /* SwiftCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalculatorTests.swift; sourceTree = "<group>"; };
+		CD63EB681A774E8300A1D95F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				CD63EB4A1A772C9700A1D95F /* ViewController.swift */,
+				CD63EB681A774E8300A1D95F /* SecondViewController.swift */,
 				CD63EB4C1A772C9700A1D95F /* Main.storyboard */,
 				CD63EB461A772C9700A1D95F /* Supporting Files */,
 			);
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD63EB691A774E8300A1D95F /* SecondViewController.swift in Sources */,
 				CD63EB4B1A772C9700A1D95F /* ViewController.swift in Sources */,
 				CD63EB491A772C9700A1D95F /* AppDelegate.swift in Sources */,
 			);
