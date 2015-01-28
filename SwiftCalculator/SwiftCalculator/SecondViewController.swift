@@ -8,10 +8,20 @@
 
 import UIKit
 
+
+extension SecondViewController{
+    func pepito(pepito:String, parametro2:String){
+        
+    }
+}
+    
+
+
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         self.view.backgroundColor = UIColor.redColor();
         
@@ -31,16 +41,49 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+
+    func functionQueRecibeDosEnterosYEscupeUnString(enteroUno:Int,entero2:Int) -> (String){
+        
+        return "\(enteroUno)" + "\(entero2)";
+        
+    }
+    
+    
+    func functionQueDevuelve2Valores()  -> (Int,Int,OptionalValue:String?) {
+        return (25,8,nil);
+    }
+    
+    func functionQueDevuelveFunction() -> (Int,Int) -> (String){
+        
+        return functionQueRecibeDosEnterosYEscupeUnString;
+    }
+    
+    override func viewDidAppear(animated: Bool) ->Void {
         super.viewDidAppear(animated);
         
         let   myDispatchTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, (Int64)(10 * NSEC_PER_SEC))
         
-        dispatch_after(myDispatchTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
-            self.dismissViewControllerAnimated(true , completion: { () -> Void in
-                println("dismissing view controller \(self)")
-            })
-        }
+        
+        var myFunc = self.functionQueDevuelveFunction();
+        println(myFunc(25, 48));
+        
+        var myString:String  = "\(self)";
+        myString += "Sarasa"
+        println(myString)
+        
+        println(functionQueDevuelve2Valores().0);
+        println(functionQueDevuelve2Valores().OptionalValue);
+        
+
+        
+        
+//        dispatch_after(myDispatchTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
+//            self.dismissViewControllerAnimated(true , completion: { () -> Void in
+//                println("dismissing view controller \(self) " + "tu vieja" + "\(2)")
+//            })
+//        }
+        
+
     }
 
     /*
@@ -52,5 +95,6 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+   
 }
